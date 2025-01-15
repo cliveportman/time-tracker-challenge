@@ -1,18 +1,24 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import { ref } from 'vue';
+import TaskList from './components/TaskList.vue';
+import TaskTimer from './components/TaskTimer.vue';
+import NewTaskForm from './components/NewTaskForm.vue';
+import type { Task } from './types/tasks';
+
+/** @todo Initialize reactive task state */
+
+/** @todo Implement methods for task management */
 </script>
 
 <template>
-  <header class="bg-slate-900 text-white">
-    <img alt="Vue logo" src="./assets/logo.svg" width="125" height="125" />
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-8">Task Time Tracker</h1>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+    <!-- @todo Add NewTaskForm component -->
 
-  <main>
-    <TheWelcome />
-  </main>
+    <!-- @todo Add TaskList component -->
+
+    <!-- @todo Add TaskTimer component for active task *-->
+
+  </div>
 </template>
