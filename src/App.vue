@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-import TaskList from './components/TaskList.vue';
-import TaskTimer from './components/TaskTimer.vue';
-import NewTaskForm from './components/NewTaskForm.vue';
-import type { Task } from './types/tasks';
+import { ref } from 'vue'
+import TaskList from './components/TaskList.vue'
+import TaskTimer from './components/TaskTimer.vue'
+import NewTaskForm from './components/NewTaskForm.vue'
+import type { Task } from './types/tasks'
+
+console.log('App.vue')
 
 /** @todo Initialize reactive task state */
 
@@ -19,6 +21,5 @@ import type { Task } from './types/tasks';
     <!-- @todo Add TaskList component -->
 
     <!-- @todo Add TaskTimer component for active task *-->
-
   </div>
 </template>
